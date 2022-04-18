@@ -4,12 +4,24 @@ import java.math.BigDecimal;
 
 public class ContaCorrente {
 
-	public int agencia;
+	private int agencia;
 	
-	public int numero;
+	private int numero;
 	
-	public BigDecimal saldo;
+	private BigDecimal saldo;
 	
+	public int getAgencia() {
+		return agencia;
+	}
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public BigDecimal getSaldo() {
+		return saldo;
+	}
+
 	public void sacar() {
 		
 	}
