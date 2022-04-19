@@ -1,13 +1,18 @@
-package me.dio.hioktec.banco;
+package me.dio.hioktec.banco.contas;
 
 import java.math.BigDecimal;
 
 public abstract class Conta implements IConta {
-
-private int agencia;
 	
-	private int numero;
+	protected enum TipoConta {
+		CORRENTE, POUPANCA
+	}
 	
+	protected static final int AGENCIA_PADRAO = 1001;
+	
+	protected int agencia;
+	protected int numero;
+	protected TipoConta tipo;
 	private BigDecimal saldo;
 	
 	public int getAgencia() {
