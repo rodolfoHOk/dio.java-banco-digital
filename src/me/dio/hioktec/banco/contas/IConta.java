@@ -10,4 +10,6 @@ public interface IConta {
 	
 	void transferir(BigDecimal valor, Conta contaDestino);
 	
+	void imprimirExtrato();
+	
 }

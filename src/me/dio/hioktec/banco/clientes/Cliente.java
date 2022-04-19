@@ -1,4 +1,4 @@
-package me.dio.hioktec.banco;
+package me.dio.hioktec.banco.clientes;
 
 public class Cliente {
 
